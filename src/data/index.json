@@ -1,0 +1,51 @@
+{
+    "skills":[
+        {
+            "id": "1",
+            "source": "./img/product-chain-1.png",
+            "title": "Front-End",
+            "description": "Loren Ipsun Dolor Sit Amet"
+        },
+        {
+            "id": "2",
+            "source": "./img/tag-1.png",
+            "title": "Back-End",
+            "description": "Loren Ipsun Dolor Sit Amet"
+        },
+        {
+            "id": "3",
+            "source": "./img/feather-pen-2.png",
+            "title": "UI & UX Design",
+            "description": "Loren Ipsun Dolor Sit Amet"
+        },
+        {
+            "id": "4",
+            "source": "./img/feather-pen-1.png",
+            "title": "Webflow",
+            "description": "Loren Ipsun Dolor Sit Amet"
+        }
+    ],
+    "portfolio":[
+        {
+            "id": "1",
+            "source": "./img/placeholder-image.png",
+            "title": "Ahuse",
+            "description": "Loren Ipsun Dolor Sit Amet",
+            "link": "View in Github"
+        },
+        {
+            "id": "2",
+            "source": "./img/placeholder-image-1.png",
+            "title": "App Dashboard",
+            "description": "Loren Ipsun Dolor Sit Amet",
+            "link": "View in Github"
+        },
+        {
+            "id": "3",
+            "source": "./img/placeholder-image-2.png",
+            "title": "Easy Rent",
+            "description": "Loren Ipsun Dolor Sit Amet",
+            "link": "View in Github"
+        }
+    ]
+}
