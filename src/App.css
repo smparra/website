@@ -13,9 +13,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 :root {
-    --primary: #5e3bee;
+    --primary: #1b3d5b;
     --heading-color: #282938;
-    --bg-shade: #f5fcff;
+    --bg-shade: #1b3d5b;
     --github: #e62872;
     --darkblue: #1c1e53;
     --black: #000000;
@@ -66,6 +66,19 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--primary);
     background-color: var(--white);
 }
+
+#linkedin-btn{
+  border: 1px solid transparent;
+  color: white;
+  background-color: #0084cc;
+}
+
+#linkedin-btn:hover{
+  color: white;
+  background-color: #11acff;
+}
+
+
 .btn-github{
     color: var(--white);
     background-color: var(--github);
@@ -237,8 +250,8 @@ h3{
 
 .hero-section-description{
     color: var(--darkblue);
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 100;
     line-height: 36px;
 }
 
@@ -516,7 +529,7 @@ select {
 /* Footer Starts */
 .footer-container {
     display: flex;
-    padding: 106.667px 85.333px;
+    padding: 0px 85px 100px 85px;
     flex-direction: column;
     align-items: flex-start;
     background: var(--bg-shade);

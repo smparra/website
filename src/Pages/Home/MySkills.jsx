@@ -2,7 +2,7 @@ import data from "../../data/index.json";
 
 export default function MySkills(){
     return(
-        <section className="skills-section" id="mySkils">
+        <section className="skills-section" id="mySkills">
             <div className="portfolio-container">
                 <p className="section-title">My Skills</p>
                 <h2 className="skills-section-heading">My Expertise</h2>
@@ -14,10 +14,10 @@ export default function MySkills(){
                             <img src={item.source} alt="Product Chain" />
                         </div>
                         <div className="skills-section-card-content">
-                            <h3 className="skills-section-title">
+                            <h3 className="skills-section-title" style={{color: "white"}}>
                                 {item.title}
                             </h3>
-                            <p className="skills-section-description">{item.description}</p>
+                            <p className="skills-section-description" style={{color: "white"}}>{item.description}</p>
                         </div>
                     </div>
                 ))}

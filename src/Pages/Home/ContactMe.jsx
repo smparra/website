@@ -8,7 +8,7 @@ export default function ContactMe() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aliquid eaque natus neque itaque, dolore assumenda ipsa cupiditate ipsam laboriosam, doloribus, voluptatum iste! Rem fugit officiis beatae cupiditate, saepe iure?
                 </p>
             </div>
-            <form className="contact-form-container">
+            <form className="contact-form-container" action="mailto:contact@segundoparra.com?subject=Portfolio Contact&body=Hello Segundo,%0D%0A%0D%0AI'm " method="POST" encType="text/plain">
                 <div className="container">
                     <label htmlFor="first-name" className="contact-label">
                         <span className="text-md">First Name</span>
@@ -18,6 +18,14 @@ export default function ContactMe() {
                         name="first-name"
                         id="first-name"
                         required
+                        onInput={(e) => {
+                            const form = e.target.form;
+                            const lastName = form['last-name'].value;
+                            const message = form['message'].value;
+                            const email = form['email'].value;
+                            const phone = form['phone-number'].value;
+                            form.action = `mailto:contact@segundoparra.com?subject=Portfolio Contact&body=Hello Segundo,%0D%0A%0D%0AI'm ${e.target.value} ${lastName}.%0D%0A%0D%0A${message}%0D%0A%0D%0AContacted from:%0D%0AEmail: ${email}%0D%0APhone: ${phone}`;
+                        }}
                         />
                     </label>
                     <label htmlFor="last-name" className="contact-label">
@@ -28,6 +36,14 @@ export default function ContactMe() {
                         name="last-name"
                         id="last-name"
                         required
+                        onInput={(e) => {
+                            const form = e.target.form;
+                            const firstName = form['first-name'].value;
+                            const message = form['message'].value;
+                            const email = form['email'].value;
+                            const phone = form['phone-number'].value;
+                            form.action = `mailto:contact@segundoparra.com?subject=Portfolio Contact&body=Hello Segundo,%0D%0A%0D%0AI'm ${firstName} ${e.target.value}.%0D%0A%0D%0A${message}%0D%0A%0D%0AContacted from:%0D%0AEmail: ${email}%0D%0APhone: ${phone}`;
+                        }}
                         />
                     </label>
                     <label htmlFor="email" className="contact-label">
@@ -38,6 +54,14 @@ export default function ContactMe() {
                         name="email"
                         id="email"
                         required
+                        onInput={(e) => {
+                            const form = e.target.form;
+                            const firstName = form['first-name'].value;
+                            const lastName = form['last-name'].value;
+                            const message = form['message'].value;
+                            const phone = form['phone-number'].value;
+                            form.action = `mailto:contact@segundoparra.com?subject=Portfolio Contact&body=Hello Segundo,%0D%0A%0D%0AI'm ${firstName} ${lastName}.%0D%0A%0D%0A${message}%0D%0A%0D%0AContacted from:%0D%0AEmail: ${e.target.value}%0D%0APhone: ${phone}`;
+                        }}
                         />
                     </label>
                     <label htmlFor="phone-number" className="contact-label">
@@ -48,25 +72,34 @@ export default function ContactMe() {
                         name="phone-number"
                         id="phone-number"
                         required
+                        onInput={(e) => {
+                            const form = e.target.form;
+                            const firstName = form['first-name'].value;
+                            const lastName = form['last-name'].value;
+                            const message = form['message'].value;
+                            const email = form['email'].value;
+                            form.action = `mailto:contact@segundoparra.com?subject=Portfolio Contact&body=Hello Segundo,%0D%0A%0D%0AI'm ${firstName} ${lastName}.%0D%0A%0D%0A${message}%0D%0A%0D%0AContacted from:%0D%0AEmail: ${email}%0D%0APhone: ${e.target.value}`;
+                        }}
                         />
                     </label>
                 </div>
-                <label htmlFor="choose-topic" className="contact-label">
-                    <span className="text-md">Choose a Topic</span>
-                    <select id="choose-topic" className="contact-input text-md">
-                        <option>Select One...</option>
-                        <option>Item 1</option>
-                        <option>Item 2</option>
-                        <option>Item 3</option>
-                    </select>
-                </label>
                 <label htmlFor="message" className="contact-label">
                         <span className="text-md">Message</span>
                         <textarea
                         className="contact-input text-md" 
                         id="message"
+                        name="message"
                         rows="8"
                         placeholder="Type your message..."
+                        required
+                        onInput={(e) => {
+                            const form = e.target.form;
+                            const firstName = form['first-name'].value;
+                            const lastName = form['last-name'].value;
+                            const email = form['email'].value;
+                            const phone = form['phone-number'].value;
+                            form.action = `mailto:contact@segundoparra.com?subject=Portfolio Contact&body=Hello Segundo,%0D%0A%0D%0AI'm ${firstName} ${lastName}.%0D%0A%0D%0A${e.target.value}%0D%0A%0D%0AContacted from:%0D%0AEmail: ${email}%0D%0APhone: ${phone}`;
+                        }}
                         />
                 </label>
                 <label htmlFor="checkbox" className="checkbox-label">
@@ -74,7 +107,7 @@ export default function ContactMe() {
                     id="checkbox"/>
                     <span className="text-sm">I accept the terms</span>
                 </label>
-                <div><button className="btn btn-primary contact-form-btn">Submit</button></div>
+                <div><button type="submit" className="btn btn-primary contact-form-btn">Submit</button></div>
             </form>
         </section>
     )

@@ -30,7 +30,7 @@ function NavBar(){
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div>
-                <img src="./img/logo.svg" alt="logoipsum" />
+                <img src="./img/logo-name.png" style={{maxHeight: "50px", width: "auto"}}/>
             </div>
             <a className={`nav_hamburger ${navActive ? "active" : ""}`} onClick={toggleNavActive}>
                 <span className="nav_hamburger_line"></span>
@@ -60,10 +60,10 @@ function NavBar(){
                         smooth={true}
                         offset={-70}
                         duration={500}
-                        to="aboutMe"
+                        to="mySkills"
                         className="navbar-content"
                         >
-                        About Me
+                        My Skills
                         </Link>
                     </li>
                     <li>
@@ -81,16 +81,11 @@ function NavBar(){
                     </li>
                 </ul>
             </div>
-            <Link 
+            <a
+            href="mailto:contact@segundoparra.com?subject=Segundo Portfolio - Inquiry"
             onClick={closeMenu}
-            activeClass="navbar-active-content"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            to="contact"
             className="btn btn-outline-primary"
-            >Contact Me</Link>
+            >Contact Me</a>
         </nav>
     )
 }
