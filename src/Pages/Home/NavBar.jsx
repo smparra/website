@@ -97,7 +97,7 @@ function NavBar(){
                 title={email}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                style={{ fontSize: isHovered ? '14px' : '18px' }}
+                style={{ fontSize: isHovered ? '14px' : '16px' }}
             >
                 {isHovered ? email : "Contact Me"}
             </a>
