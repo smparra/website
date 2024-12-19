@@ -17,7 +17,22 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <br/>
-                <button className="btn btn-primary" id="linkedin-btn" onClick={() => window.open('https://www.linkedin.com/in/segundo-parra', '_blank')}>LinkedIn</button>
+                <div style={{display: 'flex', gap: '1rem'}}>
+                    <button 
+                        className="btn btn-primary" 
+                        id="linkedin-btn"
+                        onClick={() => window.open('./img/Segundo-Resume.pdf', '_blank')}
+                    >
+                        Resume/CV
+                    </button>
+                    <button 
+                        className="btn btn-primary" 
+                        id="linkedin-btn" 
+                        onClick={() => window.open('https://www.linkedin.com/in/segundo-parra', '_blank')}
+                    >
+                        LinkedIn
+                    </button>
+                </div>
             </div>
             <div className="hero-section-img">
                 <img src="./img/hero_img.png" alt="hero-section-img" />

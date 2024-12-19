@@ -3,11 +3,20 @@ import {Link} from "react-scroll";
 
 function NavBar(){
     const [navActive, setNavActive] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
+    const email = "contact@segundoparra.com";
+
     const toggleNavActive = () => {
         setNavActive(!navActive);
     }
     const closeMenu = () => {
         setNavActive(false);
+    }
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    }
+    const handleMouseLeave = () => {
+        setIsHovered(false);
     }
     useEffect(() => {
         const handleResize = () => {
@@ -82,12 +91,16 @@ function NavBar(){
                 </ul>
             </div>
             <a
-            href="./img/Segundo-Resume.pdf"
-            onClick={closeMenu}
-            className="btn btn-outline-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Resume/CV</a>
+                href={`mailto:${email}`}
+                onClick={closeMenu}
+                className="btn btn-outline-primary btn-contact"
+                title={email}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={{ fontSize: isHovered ? '14px' : '18px' }}
+            >
+                {isHovered ? email : "Contact Me"}
+            </a>
         </nav>
     )
 }

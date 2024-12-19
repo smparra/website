@@ -78,6 +78,15 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #11acff;
 }
 
+.btn-contact {
+  font-size: 18px; /* Slightly larger font size for the button */
+  padding: 16px 34px; /* Adjust padding if necessary */
+}
+
+.btn-contact:hover {
+  font-size: 5px; /* Slightly smaller font size on hover */
+}
+
 
 .btn-github{
     color: var(--white);
