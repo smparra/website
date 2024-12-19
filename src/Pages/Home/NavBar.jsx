@@ -82,10 +82,12 @@ function NavBar(){
                 </ul>
             </div>
             <a
-            href="mailto:contact@segundoparra.com?subject=Segundo Portfolio - Inquiry"
+            href="./img/Segundo-Resume.pdf"
             onClick={closeMenu}
             className="btn btn-outline-primary"
-            >Contact Me</a>
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume/CV</a>
         </nav>
     )
 }
