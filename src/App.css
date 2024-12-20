@@ -220,7 +220,7 @@ h3{
 .hero-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 133px 85px 133px;
+    padding: 60px 85px 0px 85px;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
@@ -536,6 +536,17 @@ select {
 
   /* Footer Start */
 /* Footer Starts */
+
+.footer-content, .footer-link, .footer-text {
+  color: white; /* Set text color to white */
+  font-size: 14px; /* Match the font size of "Privacy Policy" */
+  cursor: pointer; /* Ensure the cursor indicates clickable links */
+}
+
+.footer-link {
+  text-decoration: none; /* Remove underline from links */
+}
+
 .footer-container {
     display: flex;
     padding: 0px 85px 100px 85px;

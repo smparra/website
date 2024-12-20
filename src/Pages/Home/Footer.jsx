@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer-container">
       <hr className="divider" />
       <div className="footer-content-container">
-        <p className="footer-content">Made by Segundo</p>
+        <p className="footer-content footer-text" style={{color: 'white', fontSize: '14px'}}>Segundo Parra</p>
         <div className="footer-social-icon">
           <ul>
             <li>
@@ -17,7 +17,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Privacy_Policy"
-                className="text-sm"
+                className="text-sm footer-link"
               >
                 Privacy Policy
               </Link>
@@ -30,7 +30,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Terms_of_Service"
-                className="text-sm"
+                className="text-sm footer-link"
               >
                 Terms of Service
               </Link>
@@ -43,7 +43,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Cookies_Settings"
-                className="text-sm"
+                className="text-sm footer-link"
               >
                 Cookies Settings
               </Link>

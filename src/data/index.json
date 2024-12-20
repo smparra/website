@@ -3,26 +3,26 @@
         {
             "id": "1",
             "source": "./img/product-chain-1.png",
-            "title": "Front-End",
-            "description": "Loren Ipsun Dolor Sit Amet"
+            "title": "Front-End & Back-End",
+            "description": "I bring expertise in front-end and back-end programming, leveraging Python, R, SQL, and AWS to develop intuitive interfaces and scalable systems. Focused on optimizing data management and process efficiency, I deliver robust solutions that enable effective decision-making and meet the demands of complex, data-driven environments"
         },
         {
             "id": "2",
             "source": "./img/tag-1.png",
-            "title": "Back-End",
-            "description": "Loren Ipsun Dolor Sit Amet"
+            "title": "Statistical Analysis",
+            "description": "With expertise in statistical analysis, I excel in data visualization, stochastic modeling, and machine learning using tools like R, Python, and Tableau. My experience includes GIS for spatial data analysis and disaster modeling, uncovering actionable insights and developing predictive models to address complex, data-driven challenges in dynamic industries"
         },
         {
             "id": "3",
             "source": "./img/feather-pen-2.png",
-            "title": "UI & UX Design",
-            "description": "Loren Ipsun Dolor Sit Amet"
+            "title": "(Re)Insurance",
+            "description": "Passionate about risk management, I am committed to driving innovation in the (re)insurance space. Currently pursuing my Associate in General Insurance (AINS) designation, I have developed a deep understanding of risk transfer mechanisms and policy development"
         },
         {
             "id": "4",
             "source": "./img/feather-pen-1.png",
-            "title": "Webflow",
-            "description": "Loren Ipsun Dolor Sit Amet"
+            "title": "AI Automation",
+            "description": "Fueled by a passion for artificial intelligence, I have embarked on building an AI Automation business. My focus is on leveraging AI to streamline and revolutionize business processes, enabling organizations to achieve new levels of efficiency and innovation in their operations"
         }
     ],
     "portfolio":[

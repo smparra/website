@@ -7,13 +7,13 @@ export default function MySkills(){
                 <p className="section-title">My Skills</p>
                 <h2 className="skills-section-heading">My Expertise</h2>
             </div>
-            <div className="skills-section-container">
+            <div className="skills-section-container" style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {data?.skills.map((item,index) =>(
-                    <div key={index} className="skills-section-card">
+                    <div key={index} className="skills-section-card" style={{ flex: '1 1 200px', margin: '10px', display: 'flex', flexDirection: 'column', height: '600px' }}>
                         <div className="skills-section-img">
                             <img src={item.source} alt="Product Chain" />
                         </div>
-                        <div className="skills-section-card-content">
+                        <div className="skills-section-card-content" style={{ paddingBottom: '20px', flexGrow: 1 }}>
                             <h3 className="skills-section-title" style={{color: "white"}}>
                                 {item.title}
                             </h3>
