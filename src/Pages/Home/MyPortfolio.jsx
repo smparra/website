@@ -31,15 +31,17 @@ export default function MyPortfolio(){
             <div className="portfolio-section-container">
                 {data?.portfolio?.map((item, index) => (
                     <div key={index} className="portfolio-section-card">
-                        <div className="portfolio-section-img">
-                            <img src={item.source} alt="Placeholder" />
-                        </div>
+                        <a href={item.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <div className="portfolio-section-img">
+                                <img src={item.source} alt="Placeholder" />
+                            </div>
+                        </a>
                         <div className="portfolio-section-card-content">
                             <div>
                                 <h3 className="portfolio-section-title">{item.title}</h3>
                                 <p className="text-md">{item.description}</p>
                             </div>
-                            <p className="text-sm portfolio--link">
+                            <a href={item.githubUrl} className="text-sm portfolio--link" target="_blank" rel="noopener noreferrer">
                                 {item.link}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +58,7 @@ export default function MyPortfolio(){
                                         strokeLinejoin="round"
                                     />
                                 </svg>
-                            </p>
+                            </a>
                         </div>
                     </div>
                 ))}

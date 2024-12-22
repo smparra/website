@@ -90,8 +90,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .btn-github{
     color: var(--white);
-    background-color: var(--github);
-    border: var(--github);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,8 +101,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .btn-github:hover{
-    color: var(--github);
-    background-color: var(--white);
+  color: var(--primary);
+  background-color: var(--white);
 }
 
 /* Global Styles End */

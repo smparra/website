@@ -28,24 +28,27 @@
     "portfolio":[
         {
             "id": "1",
-            "source": "./img/placeholder-image.png",
-            "title": "Ahuse",
-            "description": "Loren Ipsun Dolor Sit Amet",
-            "link": "View in Github"
+            "source": "./img/PRVCY.png",
+            "title": "PRVCY",
+            "description": "A web application that leverages AWS services to help professionals both receive and send video submissions from users on the platform while protecting their privacy.",
+            "link": "View in Github",
+            "githubUrl": "https://github.com/COSC-499-W2023/year-long-project-team-18?tab=readme-ov-file"
         },
         {
             "id": "2",
             "source": "./img/placeholder-image-1.png",
-            "title": "App Dashboard",
+            "title": "CamelcamelCamel Clone",
             "description": "Loren Ipsun Dolor Sit Amet",
-            "link": "View in Github"
+            "link": "View in Github",
+            "githubUrl": "https://github.com/smparra/COSC360-Final-Project"
         },
         {
             "id": "3",
             "source": "./img/placeholder-image-2.png",
-            "title": "Easy Rent",
+            "title": "Chatbot",
             "description": "Loren Ipsun Dolor Sit Amet",
-            "link": "View in Github"
+            "link": "View in Github",
+            "githubUrl": "https://github.com/Group-17-COSC-310/ChatBot"
         }
     ]
 }
