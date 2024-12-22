@@ -36,17 +36,17 @@
         },
         {
             "id": "2",
-            "source": "./img/placeholder-image-1.png",
-            "title": "CamelcamelCamel Clone",
-            "description": "Loren Ipsun Dolor Sit Amet",
+            "source": "./img/Parrot-pricing.png",
+            "title": "Parrot Pricing",
+            "description": "A CamelCamelCamel clone built with PHP, SQL, JavaScript, and HTML/CSS, displaying product information from a database to help users track price and make informed purchasing decisions.",
             "link": "View in Github",
             "githubUrl": "https://github.com/smparra/COSC360-Final-Project"
         },
         {
             "id": "3",
-            "source": "./img/placeholder-image-2.png",
+            "source": "./img/Chatbot.png",
             "title": "Chatbot",
-            "description": "Loren Ipsun Dolor Sit Amet",
+            "description": "A Java-based chatbot that simulates conversations with a friend on topics like food, hobbies, and books, developed to practice software engineering teamwork tools like JIRA.",
             "link": "View in Github",
             "githubUrl": "https://github.com/Group-17-COSC-310/ChatBot"
         }
